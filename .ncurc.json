@@ -1,0 +1,9 @@
+{
+  "reject": [
+    "mini-css-extract-plugin",
+    "ora",
+    "typescript",
+    "@storybook/*",
+    "glob"
+  ]
+}

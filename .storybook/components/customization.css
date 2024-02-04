@@ -1,0 +1,43 @@
+.customization {
+  --pa-grid-gutter-horizontal: 0.35rem;
+  --pa-grid-gutter-vertical: 0.25rem;
+
+  &__row {
+    flex-direction: row !important; /* Because Storybook bisc styles... */
+  }
+
+  &__label {
+    font-weight: var(--pa-font-weight-medium);
+    margin-bottom: 0.75rem;
+  }
+
+  &__properties {
+    flex-direction: column !important; /* Because Storybook bisc styles... */
+  }
+
+  &__theme,
+  &__button {
+    --size: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--size);
+    width: var(--size);
+    max-width: var(--size);
+  }
+
+  &__button {
+    --size: 90%;
+
+    background-color: #e6e1fc; /* move to variables */
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 0.75rem;
+    color: #483f6f;
+  }
+
+  &__theme.is-selected &__button {
+    background-color: #ad99ff;
+  }
+}
